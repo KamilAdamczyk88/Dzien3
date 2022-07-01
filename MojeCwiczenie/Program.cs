@@ -10,6 +10,12 @@ namespace MojeCwiczenie
     {
         static void Main(string[] args)
         {
+            Czlowiek kamcio = new Czlowiek();
+            Console.WriteLine(kamcio.imie);
+            //kamcio.imie = "Zosia";
+            Console.WriteLine(kamcio.imie);
+
+            kamcio.PrzedstawSie();
         }
     }
 }
