@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{46C51683-BCA8-4A6F-867A-778C93F791EE}</ProjectGuid>
+    <ProjectGuid>{25E6FE61-A670-4A47-B274-11091557B317}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MojeCwiczenie</RootNamespace>
-    <AssemblyName>MojeCwiczenie</AssemblyName>
+    <RootNamespace>Rabaty</RootNamespace>
+    <AssemblyName>Rabaty</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Czlowiek.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

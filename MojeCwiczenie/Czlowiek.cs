@@ -8,11 +8,19 @@ namespace MojeCwiczenie
 {
     internal class Czlowiek
     {
+        //konstruktor:
+        public Czlowiek(string imieKonstruktora)
+        {
+            imie = imieKonstruktora;
+        }
+            
+
         public string imie = "Kamil";
 
         public void PrzedstawSie()
         {
             Console.WriteLine($"Mam na imie {imie}");
         }
+        
     }
 }
