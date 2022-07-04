@@ -12,6 +12,29 @@ namespace KlasyMoje
         public string LastName;
         private DateTime dateOfBirth;
 
+        private string contactNumber;
+
+        ////Własciwosci:
+        public string ContactNumber
+        {
+            get { return contactNumber; }
+            set {
+                if (value.Length <9 )
+                {
+                    Console.WriteLine("Wrong Contact Number");
+                }
+                else
+                {
+                    contactNumber = value;
+                }
+            }
+                
+        }
+
+        //Automatycznie zaimplementowana wlascowosc
+        //public string ContactNumer { get; set; }
+
+        //Metody:
         public void SetDateOfBirht(DateTime Date)
         {
             if (Date > DateTime.Now)
@@ -32,7 +55,21 @@ namespace KlasyMoje
 
         public void SayHi()
         {
-            Console.WriteLine($"Czesc JEstem {Name} i urodziłem sie w {dateOfBirth}");
+            Console.WriteLine($"Czesc JEstem {Name}, Nazywam się {LastName} i urodziłem sie w {dateOfBirth}");
+        }
+
+        //Konstruktor jest motodą uzywana do tworzenia  nowego obiektu dla danego typu przy uzyciu slowa kluczowego NEW!!!
+        public Person(string firstName, string lastName)
+        {
+            Console.WriteLine("Constructor1");
+            Name = firstName;
+            LastName = lastName;
+        }
+
+        public Person(string name, string lastName, DateTime dateOfBirth) : this(name, lastName)
+        {
+            Console.WriteLine("Constructor2");
+            this.dateOfBirth = dateOfBirth;
         }
     }
 }
