@@ -11,7 +11,7 @@ namespace KlasyMoje
         public string Name;
         public string LastName;
         private DateTime dateOfBirth;
-
+        public static int count = 0;
         private string contactNumber;
 
         ////Własciwosci:
@@ -29,6 +29,11 @@ namespace KlasyMoje
                 }
             }
                 
+        }
+        public DateTime DateOfBirth
+        { 
+            get { return dateOfBirth; }
+            set { dateOfBirth = value; }
         }
 
         //Automatycznie zaimplementowana wlascowosc
@@ -55,7 +60,7 @@ namespace KlasyMoje
 
         public void SayHi()
         {
-            Console.WriteLine($"Czesc JEstem {Name}, Nazywam się {LastName} i urodziłem sie w {dateOfBirth}");
+            Console.WriteLine($"Czesc JEstem {Name}, Nazywam się {LastName} i urodziłem sie w {DateOfBirth}");
         }
 
         //Konstruktor jest motodą uzywana do tworzenia  nowego obiektu dla danego typu przy uzyciu slowa kluczowego NEW!!!
@@ -64,6 +69,7 @@ namespace KlasyMoje
             Console.WriteLine("Constructor1");
             Name = firstName;
             LastName = lastName;
+            count++;
         }
 
         public Person(string name, string lastName, DateTime dateOfBirth) : this(name, lastName)

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabaty", "Rabaty\Rabaty.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlasyMoje", "KlasyMoje\KlasyMoje.csproj", "{26DFC6F5-1A1C-4E38-8CE5-5075ACBB9C0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dziedziczenie", "Dziedziczenie\Dziedziczenie.csproj", "{972E3C4A-622B-4036-9DBA-47D037EB25D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{26DFC6F5-1A1C-4E38-8CE5-5075ACBB9C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26DFC6F5-1A1C-4E38-8CE5-5075ACBB9C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26DFC6F5-1A1C-4E38-8CE5-5075ACBB9C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{972E3C4A-622B-4036-9DBA-47D037EB25D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972E3C4A-622B-4036-9DBA-47D037EB25D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972E3C4A-622B-4036-9DBA-47D037EB25D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972E3C4A-622B-4036-9DBA-47D037EB25D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
